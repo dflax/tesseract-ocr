@@ -15,6 +15,7 @@
 		041EDBE51A625CED00ECDA48 /* LoveInASnapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EDBE41A625CED00ECDA48 /* LoveInASnapTests.swift */; };
 		041EDBF01A625D9200ECDA48 /* Envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = 041EDBEE1A625D9200ECDA48 /* Envelope.png */; };
 		041EDBF11A625D9200ECDA48 /* Swap.png in Resources */ = {isa = PBXBuildFile; fileRef = 041EDBEF1A625D9200ECDA48 /* Swap.png */; };
+		FEFBCEFD1A93E03D00B55A76 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFBCEFC1A93E03D00B55A76 /* TesseractOCR.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		041EDBE41A625CED00ECDA48 /* LoveInASnapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveInASnapTests.swift; sourceTree = "<group>"; };
 		041EDBEE1A625D9200ECDA48 /* Envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Envelope.png; sourceTree = "<group>"; };
 		041EDBEF1A625D9200ECDA48 /* Swap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Swap.png; sourceTree = "<group>"; };
+		FEFBCEFC1A93E03D00B55A76 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEFBCEFD1A93E03D00B55A76 /* TesseractOCR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +118,7 @@
 		041EDBE21A625CED00ECDA48 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FEFBCEFC1A93E03D00B55A76 /* TesseractOCR.framework */,
 				041EDBE31A625CED00ECDA48 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -369,6 +373,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/LoveInASnapTests",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -388,6 +393,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/LoveInASnapTests",
 				);
 				INFOPLIST_FILE = LoveInASnapTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
