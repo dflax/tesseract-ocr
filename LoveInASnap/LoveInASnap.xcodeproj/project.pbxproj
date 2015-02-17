@@ -38,6 +38,8 @@
 		FEFBCF541A93F04000B55A76 /* slk-frak.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF3E1A93F04000B55A76 /* slk-frak.traineddata */; };
 		FEFBCF551A93F04000B55A76 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFBCF3F1A93F04000B55A76 /* TesseractOCR.framework */; };
 		FEFBCF571A93F0AA00B55A76 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FEFBCF561A93F0AA00B55A76 /* README.md */; };
+		FEFBCF591A93F21D00B55A76 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFBCF581A93F21D00B55A76 /* libstdc++.dylib */; };
+		FEFBCF5B1A93F22800B55A76 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFBCF5A1A93F22800B55A76 /* CoreImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,9 @@
 		FEFBCF3E1A93F04000B55A76 /* slk-frak.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = "slk-frak.traineddata"; sourceTree = "<group>"; };
 		FEFBCF3F1A93F04000B55A76 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
 		FEFBCF561A93F0AA00B55A76 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FEFBCF581A93F21D00B55A76 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		FEFBCF5A1A93F22800B55A76 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		FEFBCF5C1A93F2E100B55A76 /* LoveInASnap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoveInASnap-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +98,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEFBCF5B1A93F22800B55A76 /* CoreImage.framework in Frameworks */,
+				FEFBCF591A93F21D00B55A76 /* libstdc++.dylib in Frameworks */,
 				FEFBCF551A93F04000B55A76 /* TesseractOCR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +144,7 @@
 				041EDBD51A625CEC00ECDA48 /* Images.xcassets */,
 				041EDBD71A625CEC00ECDA48 /* LaunchScreen.xib */,
 				041EDBCC1A625CEC00ECDA48 /* Supporting Files */,
+				FEFBCF5C1A93F2E100B55A76 /* LoveInASnap-Bridging-Header.h */,
 			);
 			path = LoveInASnap;
 			sourceTree = "<group>";
@@ -144,6 +152,8 @@
 		041EDBCC1A625CEC00ECDA48 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FEFBCF5A1A93F22800B55A76 /* CoreImage.framework */,
+				FEFBCF581A93F21D00B55A76 /* libstdc++.dylib */,
 				FEFBCF291A93F04000B55A76 /* tessdata */,
 				FEFBCF3F1A93F04000B55A76 /* TesseractOCR.framework */,
 				041EDBEE1A625D9200ECDA48 /* Envelope.png */,
@@ -446,13 +456,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LoveInASnap",
 				);
 				INFOPLIST_FILE = LoveInASnap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-lstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LoveInASnap/LoveInASnap-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -460,13 +475,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LoveInASnap",
 				);
 				INFOPLIST_FILE = LoveInASnap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-lstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LoveInASnap/LoveInASnap-Bridging-Header.h";
 			};
 			name = Release;
 		};
