@@ -37,6 +37,7 @@
 		FEFBCF531A93F04000B55A76 /* fra.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF3D1A93F04000B55A76 /* fra.traineddata */; };
 		FEFBCF541A93F04000B55A76 /* slk-frak.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF3E1A93F04000B55A76 /* slk-frak.traineddata */; };
 		FEFBCF551A93F04000B55A76 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFBCF3F1A93F04000B55A76 /* TesseractOCR.framework */; };
+		FEFBCF571A93F0AA00B55A76 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FEFBCF561A93F0AA00B55A76 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		FEFBCF3D1A93F04000B55A76 /* fra.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = fra.traineddata; sourceTree = "<group>"; };
 		FEFBCF3E1A93F04000B55A76 /* slk-frak.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = "slk-frak.traineddata"; sourceTree = "<group>"; };
 		FEFBCF3F1A93F04000B55A76 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
+		FEFBCF561A93F0AA00B55A76 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		041EDBC01A625CEC00ECDA48 = {
 			isa = PBXGroup;
 			children = (
+				FEFBCF561A93F0AA00B55A76 /* README.md */,
 				041EDBCB1A625CEC00ECDA48 /* LoveInASnap */,
 				041EDBE11A625CED00ECDA48 /* LoveInASnapTests */,
 				041EDBCA1A625CEC00ECDA48 /* Products */,
@@ -318,6 +321,7 @@
 			files = (
 				FEFBCF4D1A93F04000B55A76 /* fra.cube.lm in Sources */,
 				FEFBCF441A93F04000B55A76 /* eng.cube.lm in Sources */,
+				FEFBCF571A93F0AA00B55A76 /* README.md in Sources */,
 				041EDBD11A625CEC00ECDA48 /* ViewController.swift in Sources */,
 				041EDBCF1A625CEC00ECDA48 /* AppDelegate.swift in Sources */,
 			);
