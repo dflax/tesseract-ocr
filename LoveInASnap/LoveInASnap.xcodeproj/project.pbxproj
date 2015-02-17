@@ -15,28 +15,6 @@
 		041EDBE51A625CED00ECDA48 /* LoveInASnapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EDBE41A625CED00ECDA48 /* LoveInASnapTests.swift */; };
 		041EDBF01A625D9200ECDA48 /* Envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = 041EDBEE1A625D9200ECDA48 /* Envelope.png */; };
 		041EDBF11A625D9200ECDA48 /* Swap.png in Resources */ = {isa = PBXBuildFile; fileRef = 041EDBEF1A625D9200ECDA48 /* Swap.png */; };
-		FEFBCEFD1A93E03D00B55A76 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFBCEFC1A93E03D00B55A76 /* TesseractOCR.framework */; };
-		FEFBCF141A93EF3B00B55A76 /* dan-frak.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCEFF1A93EF3B00B55A76 /* dan-frak.traineddata */; };
-		FEFBCF151A93EF3B00B55A76 /* deu-frak.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF001A93EF3B00B55A76 /* deu-frak.traineddata */; };
-		FEFBCF161A93EF3B00B55A76 /* eng.cube.bigrams in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF011A93EF3B00B55A76 /* eng.cube.bigrams */; };
-		FEFBCF171A93EF3B00B55A76 /* eng.cube.fold in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF021A93EF3B00B55A76 /* eng.cube.fold */; };
-		FEFBCF181A93EF3B00B55A76 /* eng.cube.lm in Sources */ = {isa = PBXBuildFile; fileRef = FEFBCF031A93EF3B00B55A76 /* eng.cube.lm */; };
-		FEFBCF191A93EF3B00B55A76 /* eng.cube.nn in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF041A93EF3B00B55A76 /* eng.cube.nn */; };
-		FEFBCF1A1A93EF3B00B55A76 /* eng.cube.params in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF051A93EF3B00B55A76 /* eng.cube.params */; };
-		FEFBCF1B1A93EF3B00B55A76 /* eng.cube.size in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF061A93EF3B00B55A76 /* eng.cube.size */; };
-		FEFBCF1C1A93EF3B00B55A76 /* eng.cube.word-freq in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF071A93EF3B00B55A76 /* eng.cube.word-freq */; };
-		FEFBCF1D1A93EF3B00B55A76 /* eng.tesseract_cube.nn in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF081A93EF3B00B55A76 /* eng.tesseract_cube.nn */; };
-		FEFBCF1E1A93EF3B00B55A76 /* eng.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF091A93EF3B00B55A76 /* eng.traineddata */; };
-		FEFBCF1F1A93EF3B00B55A76 /* fra.cube.bigrams in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF0A1A93EF3B00B55A76 /* fra.cube.bigrams */; };
-		FEFBCF201A93EF3B00B55A76 /* fra.cube.fold in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF0B1A93EF3B00B55A76 /* fra.cube.fold */; };
-		FEFBCF211A93EF3B00B55A76 /* fra.cube.lm in Sources */ = {isa = PBXBuildFile; fileRef = FEFBCF0C1A93EF3B00B55A76 /* fra.cube.lm */; };
-		FEFBCF221A93EF3B00B55A76 /* fra.cube.nn in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF0D1A93EF3B00B55A76 /* fra.cube.nn */; };
-		FEFBCF231A93EF3B00B55A76 /* fra.cube.params in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF0E1A93EF3B00B55A76 /* fra.cube.params */; };
-		FEFBCF241A93EF3B00B55A76 /* fra.cube.size in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF0F1A93EF3B00B55A76 /* fra.cube.size */; };
-		FEFBCF251A93EF3B00B55A76 /* fra.cube.word-freq in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF101A93EF3B00B55A76 /* fra.cube.word-freq */; };
-		FEFBCF261A93EF3B00B55A76 /* fra.tesseract_cube.nn in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF111A93EF3B00B55A76 /* fra.tesseract_cube.nn */; };
-		FEFBCF271A93EF3B00B55A76 /* fra.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF121A93EF3B00B55A76 /* fra.traineddata */; };
-		FEFBCF281A93EF3B00B55A76 /* slk-frak.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF131A93EF3B00B55A76 /* slk-frak.traineddata */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,28 +40,6 @@
 		041EDBE41A625CED00ECDA48 /* LoveInASnapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveInASnapTests.swift; sourceTree = "<group>"; };
 		041EDBEE1A625D9200ECDA48 /* Envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Envelope.png; sourceTree = "<group>"; };
 		041EDBEF1A625D9200ECDA48 /* Swap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Swap.png; sourceTree = "<group>"; };
-		FEFBCEFC1A93E03D00B55A76 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TesseractOCR.framework; path = LoveInASnapTests/TesseractOCR.framework; sourceTree = SOURCE_ROOT; };
-		FEFBCEFF1A93EF3B00B55A76 /* dan-frak.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dan-frak.traineddata"; sourceTree = "<group>"; };
-		FEFBCF001A93EF3B00B55A76 /* deu-frak.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = "deu-frak.traineddata"; sourceTree = "<group>"; };
-		FEFBCF011A93EF3B00B55A76 /* eng.cube.bigrams */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eng.cube.bigrams; sourceTree = "<group>"; };
-		FEFBCF021A93EF3B00B55A76 /* eng.cube.fold */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eng.cube.fold; sourceTree = "<group>"; };
-		FEFBCF031A93EF3B00B55A76 /* eng.cube.lm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = eng.cube.lm; sourceTree = "<group>"; };
-		FEFBCF041A93EF3B00B55A76 /* eng.cube.nn */ = {isa = PBXFileReference; lastKnownFileType = file; path = eng.cube.nn; sourceTree = "<group>"; };
-		FEFBCF051A93EF3B00B55A76 /* eng.cube.params */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eng.cube.params; sourceTree = "<group>"; };
-		FEFBCF061A93EF3B00B55A76 /* eng.cube.size */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eng.cube.size; sourceTree = "<group>"; };
-		FEFBCF071A93EF3B00B55A76 /* eng.cube.word-freq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "eng.cube.word-freq"; sourceTree = "<group>"; };
-		FEFBCF081A93EF3B00B55A76 /* eng.tesseract_cube.nn */ = {isa = PBXFileReference; lastKnownFileType = file; path = eng.tesseract_cube.nn; sourceTree = "<group>"; };
-		FEFBCF091A93EF3B00B55A76 /* eng.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = eng.traineddata; sourceTree = "<group>"; };
-		FEFBCF0A1A93EF3B00B55A76 /* fra.cube.bigrams */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fra.cube.bigrams; sourceTree = "<group>"; };
-		FEFBCF0B1A93EF3B00B55A76 /* fra.cube.fold */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fra.cube.fold; sourceTree = "<group>"; };
-		FEFBCF0C1A93EF3B00B55A76 /* fra.cube.lm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = fra.cube.lm; sourceTree = "<group>"; };
-		FEFBCF0D1A93EF3B00B55A76 /* fra.cube.nn */ = {isa = PBXFileReference; lastKnownFileType = file; path = fra.cube.nn; sourceTree = "<group>"; };
-		FEFBCF0E1A93EF3B00B55A76 /* fra.cube.params */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fra.cube.params; sourceTree = "<group>"; };
-		FEFBCF0F1A93EF3B00B55A76 /* fra.cube.size */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fra.cube.size; sourceTree = "<group>"; };
-		FEFBCF101A93EF3B00B55A76 /* fra.cube.word-freq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "fra.cube.word-freq"; sourceTree = "<group>"; };
-		FEFBCF111A93EF3B00B55A76 /* fra.tesseract_cube.nn */ = {isa = PBXFileReference; lastKnownFileType = file; path = fra.tesseract_cube.nn; sourceTree = "<group>"; };
-		FEFBCF121A93EF3B00B55A76 /* fra.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = fra.traineddata; sourceTree = "<group>"; };
-		FEFBCF131A93EF3B00B55A76 /* slk-frak.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = "slk-frak.traineddata"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +54,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEFBCEFD1A93E03D00B55A76 /* TesseractOCR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +96,6 @@
 		041EDBCC1A625CEC00ECDA48 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FEFBCEFE1A93EF3B00B55A76 /* tessdata */,
-				FEFBCEFC1A93E03D00B55A76 /* TesseractOCR.framework */,
 				041EDBEE1A625D9200ECDA48 /* Envelope.png */,
 				041EDBEF1A625D9200ECDA48 /* Swap.png */,
 				041EDBCD1A625CEC00ECDA48 /* Info.plist */,
@@ -166,35 +119,6 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
-		};
-		FEFBCEFE1A93EF3B00B55A76 /* tessdata */ = {
-			isa = PBXGroup;
-			children = (
-				FEFBCEFF1A93EF3B00B55A76 /* dan-frak.traineddata */,
-				FEFBCF001A93EF3B00B55A76 /* deu-frak.traineddata */,
-				FEFBCF011A93EF3B00B55A76 /* eng.cube.bigrams */,
-				FEFBCF021A93EF3B00B55A76 /* eng.cube.fold */,
-				FEFBCF031A93EF3B00B55A76 /* eng.cube.lm */,
-				FEFBCF041A93EF3B00B55A76 /* eng.cube.nn */,
-				FEFBCF051A93EF3B00B55A76 /* eng.cube.params */,
-				FEFBCF061A93EF3B00B55A76 /* eng.cube.size */,
-				FEFBCF071A93EF3B00B55A76 /* eng.cube.word-freq */,
-				FEFBCF081A93EF3B00B55A76 /* eng.tesseract_cube.nn */,
-				FEFBCF091A93EF3B00B55A76 /* eng.traineddata */,
-				FEFBCF0A1A93EF3B00B55A76 /* fra.cube.bigrams */,
-				FEFBCF0B1A93EF3B00B55A76 /* fra.cube.fold */,
-				FEFBCF0C1A93EF3B00B55A76 /* fra.cube.lm */,
-				FEFBCF0D1A93EF3B00B55A76 /* fra.cube.nn */,
-				FEFBCF0E1A93EF3B00B55A76 /* fra.cube.params */,
-				FEFBCF0F1A93EF3B00B55A76 /* fra.cube.size */,
-				FEFBCF101A93EF3B00B55A76 /* fra.cube.word-freq */,
-				FEFBCF111A93EF3B00B55A76 /* fra.tesseract_cube.nn */,
-				FEFBCF121A93EF3B00B55A76 /* fra.traineddata */,
-				FEFBCF131A93EF3B00B55A76 /* slk-frak.traineddata */,
-			);
-			name = tessdata;
-			path = LoveInASnapTests/tessdata;
-			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -288,25 +212,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEFBCF1F1A93EF3B00B55A76 /* fra.cube.bigrams in Resources */,
-				FEFBCF1E1A93EF3B00B55A76 /* eng.traineddata in Resources */,
-				FEFBCF281A93EF3B00B55A76 /* slk-frak.traineddata in Resources */,
-				FEFBCF201A93EF3B00B55A76 /* fra.cube.fold in Resources */,
-				FEFBCF271A93EF3B00B55A76 /* fra.traineddata in Resources */,
-				FEFBCF221A93EF3B00B55A76 /* fra.cube.nn in Resources */,
-				FEFBCF151A93EF3B00B55A76 /* deu-frak.traineddata in Resources */,
-				FEFBCF241A93EF3B00B55A76 /* fra.cube.size in Resources */,
-				FEFBCF161A93EF3B00B55A76 /* eng.cube.bigrams in Resources */,
-				FEFBCF1A1A93EF3B00B55A76 /* eng.cube.params in Resources */,
-				FEFBCF231A93EF3B00B55A76 /* fra.cube.params in Resources */,
-				FEFBCF191A93EF3B00B55A76 /* eng.cube.nn in Resources */,
-				FEFBCF141A93EF3B00B55A76 /* dan-frak.traineddata in Resources */,
-				FEFBCF1B1A93EF3B00B55A76 /* eng.cube.size in Resources */,
-				FEFBCF1C1A93EF3B00B55A76 /* eng.cube.word-freq in Resources */,
-				FEFBCF251A93EF3B00B55A76 /* fra.cube.word-freq in Resources */,
-				FEFBCF261A93EF3B00B55A76 /* fra.tesseract_cube.nn in Resources */,
-				FEFBCF171A93EF3B00B55A76 /* eng.cube.fold in Resources */,
-				FEFBCF1D1A93EF3B00B55A76 /* eng.tesseract_cube.nn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,9 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEFBCF211A93EF3B00B55A76 /* fra.cube.lm in Sources */,
 				041EDBE51A625CED00ECDA48 /* LoveInASnapTests.swift in Sources */,
-				FEFBCF181A93EF3B00B55A76 /* eng.cube.lm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
