@@ -62,7 +62,7 @@
 		041EDBE41A625CED00ECDA48 /* LoveInASnapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveInASnapTests.swift; sourceTree = "<group>"; };
 		041EDBEE1A625D9200ECDA48 /* Envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Envelope.png; sourceTree = "<group>"; };
 		041EDBEF1A625D9200ECDA48 /* Swap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Swap.png; sourceTree = "<group>"; };
-		FEFBCEFC1A93E03D00B55A76 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
+		FEFBCEFC1A93E03D00B55A76 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TesseractOCR.framework; path = LoveInASnapTests/TesseractOCR.framework; sourceTree = SOURCE_ROOT; };
 		FEFBCEFF1A93EF3B00B55A76 /* dan-frak.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dan-frak.traineddata"; sourceTree = "<group>"; };
 		FEFBCF001A93EF3B00B55A76 /* deu-frak.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = "deu-frak.traineddata"; sourceTree = "<group>"; };
 		FEFBCF011A93EF3B00B55A76 /* eng.cube.bigrams */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eng.cube.bigrams; sourceTree = "<group>"; };
@@ -141,6 +141,8 @@
 		041EDBCC1A625CEC00ECDA48 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FEFBCEFE1A93EF3B00B55A76 /* tessdata */,
+				FEFBCEFC1A93E03D00B55A76 /* TesseractOCR.framework */,
 				041EDBEE1A625D9200ECDA48 /* Envelope.png */,
 				041EDBEF1A625D9200ECDA48 /* Swap.png */,
 				041EDBCD1A625CEC00ECDA48 /* Info.plist */,
@@ -160,8 +162,6 @@
 		041EDBE21A625CED00ECDA48 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FEFBCEFE1A93EF3B00B55A76 /* tessdata */,
-				FEFBCEFC1A93E03D00B55A76 /* TesseractOCR.framework */,
 				041EDBE31A625CED00ECDA48 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,8 +192,9 @@
 				FEFBCF121A93EF3B00B55A76 /* fra.traineddata */,
 				FEFBCF131A93EF3B00B55A76 /* slk-frak.traineddata */,
 			);
-			path = tessdata;
-			sourceTree = "<group>";
+			name = tessdata;
+			path = LoveInASnapTests/tessdata;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
