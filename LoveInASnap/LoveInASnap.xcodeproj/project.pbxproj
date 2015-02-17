@@ -19,7 +19,6 @@
 		FEFBCF411A93F04000B55A76 /* deu-frak.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF2B1A93F04000B55A76 /* deu-frak.traineddata */; };
 		FEFBCF421A93F04000B55A76 /* eng.cube.bigrams in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF2C1A93F04000B55A76 /* eng.cube.bigrams */; };
 		FEFBCF431A93F04000B55A76 /* eng.cube.fold in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF2D1A93F04000B55A76 /* eng.cube.fold */; };
-		FEFBCF441A93F04000B55A76 /* eng.cube.lm in Sources */ = {isa = PBXBuildFile; fileRef = FEFBCF2E1A93F04000B55A76 /* eng.cube.lm */; };
 		FEFBCF451A93F04000B55A76 /* eng.cube.nn in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF2F1A93F04000B55A76 /* eng.cube.nn */; };
 		FEFBCF461A93F04000B55A76 /* eng.cube.params in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF301A93F04000B55A76 /* eng.cube.params */; };
 		FEFBCF471A93F04000B55A76 /* eng.cube.size in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF311A93F04000B55A76 /* eng.cube.size */; };
@@ -28,7 +27,6 @@
 		FEFBCF4A1A93F04000B55A76 /* eng.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF341A93F04000B55A76 /* eng.traineddata */; };
 		FEFBCF4B1A93F04000B55A76 /* fra.cube.bigrams in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF351A93F04000B55A76 /* fra.cube.bigrams */; };
 		FEFBCF4C1A93F04000B55A76 /* fra.cube.fold in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF361A93F04000B55A76 /* fra.cube.fold */; };
-		FEFBCF4D1A93F04000B55A76 /* fra.cube.lm in Sources */ = {isa = PBXBuildFile; fileRef = FEFBCF371A93F04000B55A76 /* fra.cube.lm */; };
 		FEFBCF4E1A93F04000B55A76 /* fra.cube.nn in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF381A93F04000B55A76 /* fra.cube.nn */; };
 		FEFBCF4F1A93F04000B55A76 /* fra.cube.params in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF391A93F04000B55A76 /* fra.cube.params */; };
 		FEFBCF501A93F04000B55A76 /* fra.cube.size in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF3A1A93F04000B55A76 /* fra.cube.size */; };
@@ -37,7 +35,6 @@
 		FEFBCF531A93F04000B55A76 /* fra.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF3D1A93F04000B55A76 /* fra.traineddata */; };
 		FEFBCF541A93F04000B55A76 /* slk-frak.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = FEFBCF3E1A93F04000B55A76 /* slk-frak.traineddata */; };
 		FEFBCF551A93F04000B55A76 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFBCF3F1A93F04000B55A76 /* TesseractOCR.framework */; };
-		FEFBCF571A93F0AA00B55A76 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FEFBCF561A93F0AA00B55A76 /* README.md */; };
 		FEFBCF591A93F21D00B55A76 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFBCF581A93F21D00B55A76 /* libstdc++.dylib */; };
 		FEFBCF5B1A93F22800B55A76 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFBCF5A1A93F22800B55A76 /* CoreImage.framework */; };
 /* End PBXBuildFile section */
@@ -329,9 +326,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEFBCF4D1A93F04000B55A76 /* fra.cube.lm in Sources */,
-				FEFBCF441A93F04000B55A76 /* eng.cube.lm in Sources */,
-				FEFBCF571A93F0AA00B55A76 /* README.md in Sources */,
 				041EDBD11A625CEC00ECDA48 /* ViewController.swift in Sources */,
 				041EDBCF1A625CEC00ECDA48 /* AppDelegate.swift in Sources */,
 			);
