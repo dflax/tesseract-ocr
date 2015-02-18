@@ -36,7 +36,7 @@ class ViewController: UIViewController, UITextViewDelegate, UINavigationControll
 		moveViewDown()
 
 		// 2
-		let imagePickerActionSheet = UIAlertController(title: "Snap/Upload Photo", message: nil, preferredStyle: .ActionSheet)
+		let imagePickerActionSheet = UIAlertController(title: "Take/Use Photo", message: nil, preferredStyle: .ActionSheet)
 
 		// 3
 		if UIImagePickerController.isSourceTypeAvailable(.Camera) {
@@ -56,9 +56,7 @@ class ViewController: UIViewController, UITextViewDelegate, UINavigationControll
 			let imagePicker = UIImagePickerController()
 			imagePicker.delegate = self
 			imagePicker.sourceType = .PhotoLibrary
-			self.presentViewController(imagePicker,
-				animated: true,
-				completion: nil)
+			self.presentViewController(imagePicker, animated: true, completion: nil)
 		}
 		imagePickerActionSheet.addAction(libraryButton)
 
@@ -78,7 +76,6 @@ class ViewController: UIViewController, UITextViewDelegate, UINavigationControll
 	}
 
 	// Activity Indicator methods
-
 	func addActivityIndicator() {
 		activityIndicator = UIActivityIndicatorView(frame: view.bounds)
 		activityIndicator.activityIndicatorViewStyle = .WhiteLarge
@@ -121,6 +118,61 @@ class ViewController: UIViewController, UITextViewDelegate, UINavigationControll
 		view.endEditing(true)
 		moveViewDown()
 	}
+
+	// Utility method to scale images - to ensure we don't attempt to OCR something too big for Tesseract
+	func scaleImage(image: UIImage, maxDimension: CGFloat) -> UIImage {
+
+		var scaledSize = CGSize(width: maxDimension, height: maxDimension)
+		var scaleFactor: CGFloat
+
+		if image.size.width > image.size.height {
+			scaleFactor = image.size.height / image.size.width
+			scaledSize.width = maxDimension
+			scaledSize.height = scaledSize.width * scaleFactor
+		} else {
+			scaleFactor = image.size.width / image.size.height
+			scaledSize.height = maxDimension
+			scaledSize.width = scaledSize.height * scaleFactor
+		}
+
+		UIGraphicsBeginImageContext(scaledSize)
+		image.drawInRect(CGRectMake(0, 0, scaledSize.width, scaledSize.height))
+		let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
+		UIGraphicsEndImageContext()
+
+		return scaledImage
+	}
+
+	// Handle the ACTUAL OCR work!
+	func performImageRecognition(image: UIImage) {
+		// 1
+		let tesseract = G8Tesseract()
+
+		// 2
+		tesseract.language = "eng+fra"
+
+		// 3
+		tesseract.engineMode = .TesseractCubeCombined
+
+		// 4
+		tesseract.pageSegmentationMode = .Auto
+
+		// 5
+		tesseract.maximumRecognitionTime = 60.0
+
+		// 6
+		tesseract.image = image.g8_blackAndWhite()
+		tesseract.recognize()
+
+		// 7
+		textView.text = tesseract.recognizedText
+		textView.editable = true
+
+		// 8
+		removeActivityIndicator()
+	}
+
+
 }
 
 extension ViewController: UITextFieldDelegate {
@@ -138,7 +190,21 @@ extension ViewController: UITextFieldDelegate {
 	}
 }
 
+// Handling the UIImagePicker
 extension ViewController: UIImagePickerControllerDelegate {
+
+	func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+		let selectedPhoto = info[UIImagePickerControllerOriginalImage] as UIImage
+		let scaledImage = scaleImage(selectedPhoto, maxDimension: 640)
+
+		addActivityIndicator()
+
+		dismissViewControllerAnimated(true, completion: {
+			self.performImageRecognition(scaledImage)
+		})
+	}
+
+
 }
 
 
