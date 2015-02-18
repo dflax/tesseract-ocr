@@ -50,7 +50,7 @@
                                     <action selector="sharePoem:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7ED-do-cDh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBZ-eo-d7T">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBZ-eo-d7T">
                                 <rect key="frame" x="245" y="394" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="Guu-N3-3YH"/>
@@ -63,7 +63,7 @@
                                     <action selector="swapText:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DY5-y1-7pc"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3C8-6d-WmS">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3C8-6d-WmS">
                                 <rect key="frame" x="36" y="88" width="248" height="221"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVg-ev-ijX">
@@ -86,7 +86,7 @@
                                     <constraint firstAttribute="bottom" secondItem="LVg-ev-ijX" secondAttribute="bottom" constant="1" id="gdx-DP-vDF"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="InM-Rb-jXE">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="InM-Rb-jXE">
                                 <rect key="frame" x="41" y="339" width="239" height="30"/>
                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="15"/>
                                 <state key="normal" title="Snap/Upload a picture of your Poem">
@@ -96,7 +96,7 @@
                                     <action selector="takePhoto:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6T0-wI-NsH"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Find this..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="THZ-rt-8Es">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Find this..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="THZ-rt-8Es">
                                 <rect key="frame" x="37" y="399" width="96" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -105,7 +105,7 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="xhz-Uc-BOh"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Replace with..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="02E-0U-47x">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Replace with..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="02E-0U-47x">
                                 <rect key="frame" x="141" y="399" width="96" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
