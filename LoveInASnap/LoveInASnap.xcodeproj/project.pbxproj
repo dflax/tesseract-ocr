@@ -15,6 +15,7 @@
 		041EDBE51A625CED00ECDA48 /* LoveInASnapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EDBE41A625CED00ECDA48 /* LoveInASnapTests.swift */; };
 		041EDBF01A625D9200ECDA48 /* Envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = 041EDBEE1A625D9200ECDA48 /* Envelope.png */; };
 		041EDBF11A625D9200ECDA48 /* Swap.png in Resources */ = {isa = PBXBuildFile; fileRef = 041EDBEF1A625D9200ECDA48 /* Swap.png */; };
+		FE826DA91A942FFE009B58B2 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = FE826DA81A942FFE009B58B2 /* tessdata */; };
 		FEFBCF551A93F04000B55A76 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFBCF3F1A93F04000B55A76 /* TesseractOCR.framework */; };
 		FEFBCF591A93F21D00B55A76 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFBCF581A93F21D00B55A76 /* libstdc++.dylib */; };
 		FEFBCF5B1A93F22800B55A76 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFBCF5A1A93F22800B55A76 /* CoreImage.framework */; };
@@ -43,6 +44,7 @@
 		041EDBE41A625CED00ECDA48 /* LoveInASnapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveInASnapTests.swift; sourceTree = "<group>"; };
 		041EDBEE1A625D9200ECDA48 /* Envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Envelope.png; sourceTree = "<group>"; };
 		041EDBEF1A625D9200ECDA48 /* Swap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Swap.png; sourceTree = "<group>"; };
+		FE826DA81A942FFE009B58B2 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		FEFBCF3F1A93F04000B55A76 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
 		FEFBCF561A93F0AA00B55A76 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FEFBCF581A93F21D00B55A76 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
@@ -109,6 +111,7 @@
 		041EDBCC1A625CEC00ECDA48 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FE826DA81A942FFE009B58B2 /* tessdata */,
 				FEFBCF5A1A93F22800B55A76 /* CoreImage.framework */,
 				FEFBCF581A93F21D00B55A76 /* libstdc++.dylib */,
 				FEFBCF3F1A93F04000B55A76 /* TesseractOCR.framework */,
@@ -221,6 +224,7 @@
 				041EDBF11A625D9200ECDA48 /* Swap.png in Resources */,
 				041EDBD91A625CEC00ECDA48 /* LaunchScreen.xib in Resources */,
 				041EDBD61A625CEC00ECDA48 /* Images.xcassets in Resources */,
+				FE826DA91A942FFE009B58B2 /* tessdata in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
